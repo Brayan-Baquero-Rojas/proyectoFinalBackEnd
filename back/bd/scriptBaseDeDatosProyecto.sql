@@ -50,10 +50,11 @@ create table clientes(
 				direccion varchar(200),
 				email varchar(200),
 				telefono varchar(200),
-				rfc varchar(200),
+				celular varchar(200),
 				primary key(id_cliente)
 					);
--- Recuerda agregar el id de usuario por favor 
+
+
 create table ventas(
 				id_venta int not null,
 				id_cliente int,
@@ -61,4 +62,13 @@ create table ventas(
 				id_usuario int,
 				precio float,
 				fechaCompra date
+					);
+
+
+create table datos(
+				id_datos int not null,
+				nombre varchar(200),
+				telefono varchar(200),
+				email varchar(200),
+				mensaje varchar(200)
 					);
